@@ -1,0 +1,10 @@
+flow-typed/
+test/unit/
+flow/
+typescript/
+dist/
+cjs/
+es/
+rollup.config.js
+package.json
+README.md

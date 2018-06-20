@@ -1,0 +1,42 @@
+{
+  "env": {
+    "cjs": {
+      "presets": [
+        [
+          "env",
+          {
+            "modules": false
+          }
+        ],
+        "flow"
+      ],
+      "plugins": [
+        "transform-es2015-modules-commonjs",
+        "transform-class-properties"
+      ]
+    },
+    "es": {
+      "presets": ["flow"],
+      "plugins": ["transform-class-properties"]
+    },
+    "iife": {
+      "presets": ["es2015-rollup", "flow"],
+      "plugins": ["transform-class-properties"]
+    },
+    "test": {
+      "presets": ["env", "react", "flow"],
+      "plugins": [
+        "istanbul",
+        "transform-class-properties",
+        "transform-object-rest-spread",
+        [
+          "module-alias",
+          [
+            { "src": "./src", "expose": "@" },
+            { "src": "./test/_helpers", "expose": "_helpers" }
+          ]
+        ]
+      ]
+    }
+  }
+}

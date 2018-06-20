@@ -1,0 +1,15 @@
+export default {
+  func: () => {},
+  number: 1,
+  string: 'string',
+  boolean: true,
+  null: null,
+  NaN: NaN,
+  undefined: undefined,
+  symbol: Symbol('symbol'),
+  object: {},
+  array: [],
+  date: new Date(),
+  Set: new Set(),
+  Map: new Map(),
+}

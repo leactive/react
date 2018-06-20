@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "../../../",
+    "module": "commonjs",
+    "target": "ESNext",
+    "lib": ["dom", "es6"],
+    "paths": {
+      "package": ["./"]
+    },
+    "jsx": "react",
+    "strict": true,
+    "sourceMap": false,
+    "noEmit": true,
+    "allowJs": false,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true
+  },
+  "include": ["./**/*"]
+}

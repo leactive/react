@@ -1,0 +1,13 @@
+[ignore]
+
+[include]
+
+[libs]
+
+[lints]
+all=warn
+
+[options]
+module.name_mapper='^package' ->'<PROJECT_ROOT>/flow'
+
+[strict]

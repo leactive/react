@@ -15,14 +15,25 @@
         "transform-class-properties"
       ]
     },
+
     "es": {
-      "presets": ["flow"],
+      "presets": [
+        [
+          "env",
+          {
+            "modules": false
+          }
+        ],
+        "flow"
+      ],
       "plugins": ["transform-class-properties"]
     },
+
     "iife": {
       "presets": ["es2015-rollup", "flow"],
       "plugins": ["transform-class-properties"]
     },
+
     "test": {
       "presets": ["env", "react", "flow"],
       "plugins": [
